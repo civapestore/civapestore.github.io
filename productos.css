@@ -1,0 +1,146 @@
+html,
+body{
+  position: relative;
+  height: 100%;
+}
+body{
+  background-color: #323232 ;
+  font-family: Helvetica Neue, Helvetica;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+.btn-inicio{
+  display: inline-block;
+  text-decoration: none;
+  margin: 100px;
+  font-size: 30px;
+  font-weight: 1000;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 50px;
+  transition: .3s;
+}
+.imagen-productos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.swiper{
+  width: 100%;
+  padding: 150px 0 50px 0;
+}
+
+.swiper-slide{
+  width: 300px;
+  height: 550px;
+  background-color: #323232;
+  box-shadow: 0 0px 20px rgba(0,0,0,0.4);
+  padding: 40px;
+  text-align: center;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.icons i{
+  font-size: 20px;
+  color: #FFB900;
+}
+.icons img{
+  width: 120px;
+}
+
+.product-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-txt{
+  flex-basis: 50%;
+  text-align: left;
+}
+
+.product-txt span{
+  font-size: 25px;
+  color: #FFB900;
+  font-weight: bold;
+}
+
+.product-txt h3{
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.product-txt p{
+  font-size: 14px;
+  color: #C4C4C4;
+} 
+.product-img{
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.product-img img {
+  width: 120px;
+}
+
+.btn-1{
+  display: inline-block;
+  padding: 13px 55px;
+  border: 1px solid #FFB900;
+  border-radius: 25px;
+  color: #FFB900;
+  text-decoration: none;
+  margin-top: 50px;
+}
